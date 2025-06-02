@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxcj27ckbo5ns"]
+
+[ext_resource type="Script" uid="uid://by8ve5tbbxhuv" path="res://Scripts/signal.gd" id="1_6usyx"]
+
+[node name="Signal" type="Node2D"]
+physics_interpolation_mode = 1
+z_index = 3
+script = ExtResource("1_6usyx")
+
+[node name="Signal uhhh" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 0, 20, 20, 20, 20, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -66.0
+offset_top = 1.0
+offset_right = -3.0
+offset_bottom = 24.0
+text = "Track:"

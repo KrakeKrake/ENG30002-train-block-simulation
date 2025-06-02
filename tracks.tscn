@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d35ounxk0vqbv"]
+
+[ext_resource type="Script" uid="uid://dms5n2h1nw5bi" path="res://Scripts/tracks.gd" id="1_plflm"]
+
+[sub_resource type="Curve2D" id="Curve2D_plflm"]
+
+[node name="Tracks" type="Node2D"]
+script = ExtResource("1_plflm")
+
+[node name="Path" type="Path2D" parent="."]
+curve = SubResource("Curve2D_plflm")
+
+[node name="TrackLine" type="Line2D" parent="."]

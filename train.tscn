@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck3rvvn07o6ar"]
+
+[ext_resource type="Script" uid="uid://bwl1etsvo68b7" path="res://Scripts/train.gd" id="1_bju55"]
+[ext_resource type="Texture2D" uid="uid://64ce2bqtiju8" path="res://Train.png" id="2_lomod"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lomod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lomod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lomod")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Train" type="Node2D"]
+physics_interpolation_mode = 1
+script = ExtResource("1_bju55")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.90735e-06, -17)
+scale = Vector2(0.363281, 0.363281)
+sprite_frames = SubResource("SpriteFrames_lomod")
+frame_progress = 0.403519
+flip_h = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -24.0
+offset_top = -58.0
+offset_right = 25.0
+offset_bottom = -35.0
+text = "Status"

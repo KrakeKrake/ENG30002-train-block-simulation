@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b44p8ik3yd8k7"]
+
+[ext_resource type="Script" uid="uid://bkj01sso0y3w1" path="res://Scripts/junction.gd" id="1_7xa5w"]
+[ext_resource type="Texture2D" uid="uid://dvby7ykw4wxk0" path="res://icon.svg" id="1_gcosn"]
+
+[node name="Junction" type="Node2D"]
+physics_interpolation_mode = 1
+script = ExtResource("1_7xa5w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, 9.53674e-07)
+scale = Vector2(0.171875, 0.171875)
+texture = ExtResource("1_gcosn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -35.0
+offset_right = 20.0
+offset_bottom = -12.0
